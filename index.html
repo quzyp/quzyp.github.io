@@ -30,6 +30,19 @@
           <span id="dis_cookies">0</span>
         </div>
 
+        <div class="item-card">
+          Preis:
+        </div>
+        <div class="item-card item-card-center">
+          <span id="dis_prc_cookies">0</span>€
+        </div>
+        <div class="item-card">
+          <button id ="inc-prc_cookie-0.1" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">+</button>
+          <button id ="dec-prc_cookie-0.1" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">-</button>
+        </div>
+        <div class="item-card">
+
+        </div>
 
         <div class="item-card">
           Mehl:
@@ -39,8 +52,8 @@
         </div>
         <div class="item-card">
           <button id ="buy-yeast-1" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">Kaufen</button>
-          <button class="btn btn-primary btn-sm" hidden>10</button>
-          <button class="btn btn-primary btn-sm" hidden>100</button>
+          <button id="buy-yeast-10" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">+10</button>
+          <button id="buy-yeast-100" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">+100</button>
         </div>
         <div class="item-card">
           <span>0,99</span>€/kg
@@ -54,8 +67,8 @@
         </div>
         <div class="item-card">
           <button id="buy-sugar-1" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">Kaufen</button>
-          <button class="btn btn-primary btn-sm" hidden>10</button>
-          <button class="btn btn-primary btn-sm" hidden>100</button>
+          <button id="buy-sugar-10" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">+10</button>
+          <button id="buy-sugar-100" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">+100</button>
         </div>
         <div class="item-card">
           <span>1,29</span>€/kg
@@ -70,8 +83,8 @@
         </div>
         <div class="item-card">
           <button id="buy-butter-1" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">Kaufen</button>
-          <button class="btn btn-primary btn-sm" hidden>10</button>
-          <button class="btn btn-primary btn-sm" hidden>100</button>
+          <button id="buy-butter-10" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">+10</button>
+          <button id="buy-butter-100" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">+100</button>
         </div>
         <div class="item-card">
           <span>2,29</span>€/250g
@@ -86,24 +99,53 @@
         </div>
         <div class="item-card">
           <button id="buy-eggs-1" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">Kaufen</button>
-          <button class="btn btn-primary btn-sm" hidden>10</button>
-          <button class="btn btn-primary btn-sm" hidden>100</button>
+          <button id="buy-eggs-10" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">+10</button>
+          <button id="buy-eggs-100" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">+100</button>
         </div>
         <div class="item-card">
           <span>2,29</span>€/10
         </div>
 
-        <div class="item-card item-card-wide25 item-card-center">
-          <button id="bake-default" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">Backen</button>
+        <div class="item-card">
+          <button id="bake-default" class="btn btn-primary" onClick="reply_click(this.id)">Backen</button>
         </div>
-        
+
+        <div class="item-card item-card-wide24 item-card-center">
+          <progress id="file" max="100" value="70"> 70% </progress>
+        </div>
       </div>
-      <progress id="file" max="100" value="70"> 70% </progress>
     </div>
 
-    <div class="item item2">2</div>
 
-    <div class="item item3">3</div>
+    <div class="item item2">
+      <div id="container-card">
+        <div class="item-card item-card-wide13">
+          Küchenmaschine
+        </div>
+        <div class="item-card">
+          <button id="buy-kitchenaid" class="btn btn-primary" onClick="reply_click(this.id)">Kaufen</button>
+        </div>
+        <div class="item-card item-card-center">
+          299€
+        </div>
+        <div class="item-card item-card-wide15">
+          (Erhöht die Geschwindigkeit)
+        </div>
+      </div>
+    </div>
+
+
+    <div class="item item3">
+      <div id="container-card">
+        <div class="item-card">
+          Nachfrage:
+        </div>
+        <div class="item-card item-card-center">
+          <span id="dis_demand">0</span> pro Sek.</button>
+        </div>
+      </div>
+    </div>
+
 
     <div class="item item4">4</div>
 

@@ -30,7 +30,7 @@ html, body {
 #container-card {
   display: grid;
   grid-template-columns: 1fr 2fr 3fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   row-gap: 3px;
 }
 
@@ -64,6 +64,16 @@ html, body {
 .item-card-center {
   text-align: center;
 }
+
+.item-card-wide13 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item-card-wide15 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
 .item-card-wide24 {
   grid-column-start: 2;
   grid-column-end: 4;
@@ -74,17 +84,27 @@ html, body {
   grid-column-end: 5;
 }
 
+.warning {
+  color: #de2424;
+}
+
 span.highlight {
-    animation: highlight 250ms;
+    animation: highlight 1000ms;
+}
+
+progress {
+  width: auto;
+  border: 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
 }
 
 @keyframes highlight {
     0% {
-      color: #bb2020;
-      background-color: #b0b0b0;
+      font-size: 12pt;
     }
     100% {
-      color: #000000;
-      background-color: #ffffff;
+      font-size: 16pt;
     }
   }
