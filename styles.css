@@ -1,0 +1,90 @@
+:root {
+  --color-bg: #fffffc;
+  --color-box-1: #ffd6a5;
+  --color-box-2: #9bf6ff;
+  --color-box-3: #ffadad;
+  --color-box-4: #caffbf;
+}
+
+@font-face {
+  font-family: 'ubu-mono';
+  src: URL('UbuntuMono-Regular.ttf') format('truetype');
+}
+
+html, body {
+  font-family: 'ubu-mono';
+  font-size: 1em;
+  background-color: var(--color-bg);
+  height: 90vh;
+}
+
+#container-main {
+  display: grid;
+  height: 98vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 1vh;
+  row-gap: 1vh;
+}
+
+#container-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 3px;
+}
+
+.item {
+  border-radius: 16px;
+  padding: 1em;
+  align-self: stretch;
+  font-size: 16pt;
+}
+
+.item1 {
+  background-color: var(--color-box-1);
+}
+
+.item2 {
+  background-color: var(--color-box-2);
+}
+
+.item3 {
+  background-color: var(--color-box-3);
+}
+
+.item4 {
+  background-color: var(--color-box-4);
+}
+
+.item-card {
+  align-self: center;
+}
+
+.item-card-center {
+  text-align: center;
+}
+.item-card-wide24 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.item-card-wide25 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+span.highlight {
+    animation: highlight 250ms;
+}
+
+@keyframes highlight {
+    0% {
+      color: #bb2020;
+      background-color: #b0b0b0;
+    }
+    100% {
+      color: #000000;
+      background-color: #ffffff;
+    }
+  }

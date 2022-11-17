@@ -1,0 +1,115 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Clicker game</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div id="container-main">
+
+    <div class="item item1">
+      <div id="container-card">
+
+        <!-- MONEY -->
+        <div class="item-card">
+          Bargeld:
+        </div>
+        <div class="item-card item-card-wide25 item-card-center">
+          <span id="dis_money">10,00</span>€
+        </div>
+
+        <!-- COOKIES -->
+        <div class="item-card">
+          Kekse:
+        </div>
+        <div class="item-card item-card-wide25 item-card-center">
+          <span id="dis_cookies">0</span>
+        </div>
+
+
+        <div class="item-card">
+          Mehl:
+        </div>
+        <div class="item-card item-card-center">
+          <span id="dis_yeast">0,00</span>kg
+        </div>
+        <div class="item-card">
+          <button id ="buy-yeast-1" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">Kaufen</button>
+          <button class="btn btn-primary btn-sm" hidden>10</button>
+          <button class="btn btn-primary btn-sm" hidden>100</button>
+        </div>
+        <div class="item-card">
+          <span>0,99</span>€/kg
+        </div>
+
+        <div class="item-card">
+          Zucker:
+        </div>
+        <div class="item-card item-card-center">
+          <span id="dis_sugar">0,00</span>kg
+        </div>
+        <div class="item-card">
+          <button id="buy-sugar-1" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">Kaufen</button>
+          <button class="btn btn-primary btn-sm" hidden>10</button>
+          <button class="btn btn-primary btn-sm" hidden>100</button>
+        </div>
+        <div class="item-card">
+          <span>1,29</span>€/kg
+        </div>
+
+
+        <div class="item-card">
+          Butter:
+        </div>
+        <div class="item-card item-card-center">
+          <span id="dis_butter">0,00</span>kg
+        </div>
+        <div class="item-card">
+          <button id="buy-butter-1" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">Kaufen</button>
+          <button class="btn btn-primary btn-sm" hidden>10</button>
+          <button class="btn btn-primary btn-sm" hidden>100</button>
+        </div>
+        <div class="item-card">
+          <span>2,29</span>€/250g
+        </div>
+
+
+        <div class="item-card">
+          Eier:
+        </div>
+        <div class="item-card item-card-center">
+          <span id="dis_eggs">0</span>
+        </div>
+        <div class="item-card">
+          <button id="buy-eggs-1" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">Kaufen</button>
+          <button class="btn btn-primary btn-sm" hidden>10</button>
+          <button class="btn btn-primary btn-sm" hidden>100</button>
+        </div>
+        <div class="item-card">
+          <span>2,29</span>€/10
+        </div>
+
+        <div class="item-card item-card-wide25 item-card-center">
+          <button id="bake-default" class="btn btn-primary btn-sm" onClick="reply_click(this.id)">Backen</button>
+        </div>
+        
+      </div>
+      <progress id="file" max="100" value="70"> 70% </progress>
+    </div>
+
+    <div class="item item2">2</div>
+
+    <div class="item item3">3</div>
+
+    <div class="item item4">4</div>
+
+  </div>
+
+  <script src="game.js"></script>
+</body>
+
+</html>
