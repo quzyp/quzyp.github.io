@@ -22,7 +22,7 @@ var btn_bake = document.getElementById("bake-default");
 var progress = document.getElementById("file");
 
 var money = 10.00;
-var cookies = 40;
+var cookies = 0;
 var prc_cookies = 0.5;
 var demand = 0.1;
 var count = 0;
