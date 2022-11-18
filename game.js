@@ -58,6 +58,7 @@ var baking_speed = 0.25
 function mainloop() {
     demand = demand_base * (1/prc_cookie)
     progress.setAttribute("value", baking_progress);
+    progress.innerText = baking_progress + '%';
     if (baking) {
         baking_progress += baking_speed;
         if (baking_progress >= 100) {
