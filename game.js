@@ -42,7 +42,7 @@ var dis_butter = document.getElementById("dis_butter");
 var dis_eggs = document.getElementById("dis_eggs");
 
 var btn_bake = document.getElementById("bake-default");
-var progress = document.getElementById("file");
+var progress = document.getElementById("progress-bake");
 
 var money = 10.00;
 var cookies = 0;
@@ -57,8 +57,9 @@ var baking_speed = 0.25
 
 function mainloop() {
     demand = demand_base * (1/prc_cookie)
-    progress.setAttribute("value", baking_progress);
-    progress.innerText = baking_progress + '%';
+    progress_display = Math.ceil(baking_progress)
+    progress.setAttribute("aria-valuenow", progress_display);
+    progress.style.width = `${progress_display}%`;
     if (baking) {
         baking_progress += baking_speed;
         if (baking_progress >= 100) {

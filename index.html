@@ -109,10 +109,13 @@
         <div class="item-card">
           <button id="bake-default" class="btn btn-primary" onClick="reply_click(this.id)">Backen</button>
         </div>
-
-        <div class="item-card item-card-wide24 item-card-center">
+        <div class="item-card">
           Fortschritt:
-          <progress id="file" max="100" value="10">10%</progress>
+        </div>
+        <div class="item-card item-card-wide35 item-card-center">
+          <div class="progress">
+            <div id="progress-bake" class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         </div>
       </div>
     </div>
