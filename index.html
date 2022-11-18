@@ -107,14 +107,14 @@
         </div>
 
         <div class="item-card">
-          <button id="bake-default" class="btn btn-primary" onClick="reply_click(this.id)">Backen</button>
+          <button id="bake-default" class="btn btn-success" onClick="reply_click(this.id)">Backen</button>
         </div>
         <div class="item-card">
           Fortschritt:
         </div>
         <div class="item-card item-card-wide35 item-card-center">
           <div class="progress">
-            <div id="progress-bake" class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+            <div id="progress-bake" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
       </div>
@@ -123,18 +123,64 @@
 
     <div class="item item2">
       <div id="container-card">
-        <div class="item-card item-card-wide13">
-          Küchenmaschine
-        </div>
-        <div class="item-card">
-          <button id="buy-kitchenaid" class="btn btn-primary" onClick="reply_click(this.id)">Kaufen</button>
-        </div>
-        <div class="item-card item-card-center">
-          299€
-        </div>
-        <div class="item-card item-card-wide15">
-          (Erhöht die Geschwindigkeit)
-        </div>
+      <!-- This block contains possible upgrades. By default they are only visible after
+           they can actually be bought. Max elements is 4. Each elemnt has ids:
+           item-card-upgrade-x0: pretext
+           item-card-upgrade-x1: Buy button(s)
+           item-card-upgrade-x2: Price
+           item-card-upgrade-x3: Explanation -->
+          <div class="item-card item-card-wide13 item-card-upgrade10">
+            Küchenmaschine
+          </div>
+          <div class="item-card item-card-upgrade11">
+            <button id="buy-kitchenaid" class="btn btn-primary" onClick="reply_click(this.id)">Kaufen</button>
+          </div>
+          <div class="item-card item-card-center item-card-upgrade12">
+            299€
+          </div>
+          <div class="item-card item-card-wide15 item-card-upgrade13">
+            (Erhöht die Geschwindigkeit)
+          </div>
+  
+          <div class="item-card item-card-wide13 item-card-upgrade10">
+            Küchenmaschine
+          </div>
+          <div class="item-card item-card-upgrade11">
+            <button id="buy-kitchenaid" class="btn btn-primary" onClick="reply_click(this.id)">Kaufen</button>
+          </div>
+          <div class="item-card item-card-center item-card-upgrade12">
+            299€
+          </div>
+          <div class="item-card item-card-wide15 item-card-upgrade13">
+            (Erhöht die Geschwindigkeit)
+          </div>
+
+          <div class="item-card item-card-wide13 item-card-upgrade10">
+            Küchenmaschine
+          </div>
+          <div class="item-card item-card-upgrade11">
+            <button id="buy-kitchenaid" class="btn btn-primary" onClick="reply_click(this.id)">Kaufen</button>
+          </div>
+          <div class="item-card item-card-center item-card-upgrade12">
+            299€
+          </div>
+          <div class="item-card item-card-wide15 item-card-upgrade13">
+            (Erhöht die Geschwindigkeit)
+          </div>
+
+          <div class="item-card item-card-wide13 item-card-upgrade10">
+            Küchenmaschine
+          </div>
+          <div class="item-card item-card-upgrade11">
+            <button id="buy-kitchenaid" class="btn btn-primary" onClick="reply_click(this.id)">Kaufen</button>
+          </div>
+          <div class="item-card item-card-center item-card-upgrade12">
+            299€
+          </div>
+          <div class="item-card item-card-wide15 item-card-upgrade13">
+            (Erhöht die Geschwindigkeit)
+          </div>
+
       </div>
     </div>
 

@@ -102,14 +102,11 @@ html, body {
 }
 
 span.highlight {
-    animation: highlight 1000ms;
+  animation: highlight 500ms;
+  animation-timing-function: cubic-bezier(.17,.67,.83,.67);
 }
 
 @keyframes highlight {
-    0% {
-      font-size: 12pt;
-    }
-    100% {
-      font-size: 16pt;
-    }
+  0% { color: rgba(0, 0, 0, 0);}
+  100% { color: rgba(0, 0, 0, 1);}
   }
