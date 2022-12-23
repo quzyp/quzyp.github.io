@@ -1,3 +1,4 @@
+
 var locale = 'de-DE';
 
 var ingredients = {
