@@ -1,18 +1,52 @@
-// This is where the magic happens
+/**
+ * @fileOverview What is this file for?
+ * @author David Stille
+ * @version 0.0.1
+ * 
+ * For local development in Firefox, set security.fileuri.strict_origin_policy to False
+ */
 
-const lang = 'de'
+const lang = 'de' // Main language for localization
+    
+/**
+ * The main class of the game state.
+ */
+class Bakery {
+    /**
+     * 
+     * @param {String} lang
+     * @param {Array} settings
+     * @param {String} state
+     */
+    constructor(lang, settings = [], state = '') {
+        this.lang = lang;
+        this.settings = settings;
+        this.values = {};
+        this.state = state;
+        if (!this.state) {
+            this.setDefaults().then();
+        }
+    }
+    
+    async setDefaults() {
+        this.values = await getData('gameDefaults');
+    }
+}
 
-main().then();
 
-async function getData(filename) {
-    // Get the json file and return it's contents as a json object.
-    let response = await fetch(`./data/${filename}.json`);
+/**
+ * Get the json file and return it's contents as a json object.
+ * @param {String} fileName The file name (excluding extension).
+ * @returns {Promise<any>}
+ */
+async function getData(fileName) {
+    let response = await fetch(`./data/${fileName}.json`);
     if (response.ok) {
         return await response.json();
     }
 }
 
-async function main() {
+async function buildUI() {
     // All the ingredients go into the first div box.
     let ingredients = await getData('ingredients');
     let container1 = document.getElementById("container-card");
@@ -34,9 +68,9 @@ async function main() {
 /**
  * Does something
  * 
- * @param {Element} container
- * @param {String} innerHTML
- * @param {Array[String]} args
+ * @param {Element} container The containing element
+ * @param {String} innerHTML The inner HTML
+ * @param {String} args Additional classes
  */
 function addChildCard(container, innerHTML, ...args) {
     let newChild = document.createElement("div");
@@ -45,3 +79,20 @@ function addChildCard(container, innerHTML, ...args) {
     newChild.innerHTML = innerHTML;
     container.appendChild(newChild);
 }
+
+/**
+ * The main game loop.
+ * @param {Object} gameObject
+ */
+function mainLoop(gameObject) {
+    /* Set all displayed values from gameObject current values. */
+    for (const [key, value] of Object.entries(gameObject.values)) {
+        let idName = `dis_${key}`;
+        let element = document.getElementById(idName);
+        element.innerText = value;
+    }
+}
+
+buildUI().then(); // Build the interface
+bakery = new Bakery(lang);
+setInterval(mainLoop, 30, bakery);
