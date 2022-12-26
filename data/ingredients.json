@@ -1,0 +1,26 @@
+[
+    {
+        "name": "yeast",
+        "qty":  0,
+        "cost": 0.99,
+        "pack": "1 kg"
+    },
+    {
+        "name": "sugar",
+        "qty":  0,
+        "cost": 1.29,
+        "pack": "1 kg"
+    },
+    {
+        "name": "butter",
+        "qty":  0,
+        "cost": 2.29,
+        "pack": "250g"
+    },
+    {
+        "name": "eggs",
+        "qty":  0,
+        "cost": 2.29,
+        "pack": "10er"
+    }
+]
