@@ -1,7 +1,7 @@
 
 var locale = 'de-DE';
 
-var ingredients = {
+ingredients = {
     yeast:      [0, 0.99, 1, 
                  document.getElementById("dis_yeast"), 
                  document.getElementById("buy-yeast-1"), 

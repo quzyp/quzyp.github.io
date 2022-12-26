@@ -3,24 +3,40 @@
         "name": "yeast",
         "qty":  0,
         "cost": 0.99,
-        "pack": "1 kg"
+        "pack": "1 kg",
+        "i18n": {
+            "en": "Yeast",
+            "de": "Mehl"
+        }
     },
     {
         "name": "sugar",
         "qty":  0,
         "cost": 1.29,
-        "pack": "1 kg"
+        "pack": "1 kg",
+        "i18n": {
+            "en": "Sugar",
+            "de": "Zucker"
+        }
     },
     {
         "name": "butter",
         "qty":  0,
         "cost": 2.29,
-        "pack": "250g"
+        "pack": "250g",
+        "i18n": {
+            "en": "Butter",
+            "de": "Butter"
+        }
     },
     {
         "name": "eggs",
         "qty":  0,
         "cost": 2.29,
-        "pack": "10er"
+        "pack": "10er",
+        "i18n": {
+            "en": "Eggs",
+            "de": "Eier"
+        }
     }
 ]
