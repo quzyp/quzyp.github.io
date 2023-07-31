@@ -60,4 +60,7 @@ $( document ).ready(function() {
         });
     });
 
+    $(".hint").click(function() {
+        alert('Hoffentlich [...] versichert.');
+    });
 });

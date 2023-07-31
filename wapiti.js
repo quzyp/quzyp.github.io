@@ -57,4 +57,7 @@ $( document ).ready(function() {
         });
     });
 
+    $(".hint").click(function() {
+        alert('Gottähnlich, wie Atlas.');
+    });
 });

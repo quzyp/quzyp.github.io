@@ -56,4 +56,8 @@ $( document ).ready(function() {
         });
     });
 
+    $(".hint").click(function() {
+        alert('Es geht um den Quell....');
+    });
+
 });

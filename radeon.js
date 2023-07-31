@@ -61,4 +61,7 @@ $( document ).ready(function() {
         });
     });
 
+    $(".hint").click(function() {
+        alert('Berühmtester Satz aus der berühmtesten Kennedy-Rede.');
+    });
 });

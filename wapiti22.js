@@ -1,12 +1,10 @@
 $( document ).ready(function() {
-    var solution = "atlan"
+    var solution = "ufo"
     var lenAnswer = solution.length;
     var solved = false;
 
     var inputbox = '<input type="text" size="1" maxlength="1" class="empty">'
     $("#userinput").append(inputbox);
-    $("#userinput").append(inputbox); 
-    $("#userinput").append(inputbox); 
     $("#userinput").append(inputbox); 
 
     $("input[type=text]").each(function( index ) {
@@ -55,6 +53,10 @@ $( document ).ready(function() {
                 $(this).select(); 
             }
         });
+    });
+
+    $(".hint").click(function() {
+        alert('Eine Hardrockband.');
     });
 
 });

@@ -57,4 +57,7 @@ $( document ).ready(function() {
         });
     });
 
+    $(".hint").click(function() {
+        alert('Ein Rettich minus die Doppelbuchstaben.');
+    });
 });
