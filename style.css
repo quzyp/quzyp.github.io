@@ -63,7 +63,7 @@ div#bottom {
 }
 
 .btn {
-    font-size: 1em;
+    font-size: 2em;
     border: none;
     background-color: #58f;
     padding: 0.25em;
@@ -74,6 +74,9 @@ div#bottom {
     background-color: #5f8;
 }
 
+.hint {
+    background-color: #d93459;
+}
 @keyframes animate {
     0% {
         color: #1b1d12;
