@@ -58,4 +58,8 @@ $( document ).ready(function() {
         });
     });
 
+    $(".hint").click(function() {
+        alert('Altes Passwort und zweitneuester Bundesstaat der USA.');
+    });
+
 });
