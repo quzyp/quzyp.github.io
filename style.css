@@ -32,6 +32,11 @@ div#bottom {
     justify-self: center;
 }
 
+div#bottom p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    color: #080;
+}
 .answer input {
     font-size: 3em;
     height: 7vw;
